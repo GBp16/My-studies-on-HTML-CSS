@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Grouping Tags
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.39);
+        }
+
+        nav {
+            background-color: rgb(48, 48, 48);
+            padding: 3px;
+
+        
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            /*Define a cor de fundo da propriedade <main>*/
+            background-color: white;
+            /*Adiciona um espaçamento interno de 10 pexels, em todos os lados do conteúdo dentro da propriedade <main>*/
+            padding: 10px;
+            /*Define uma margem externa de 10 pixels em todos os lados do <main>, assim criando um espaço entre o elemento
+             e outros elementos na página */
+            margin: 10px;
+            /*Adiciona bordas arredondadas a propriedade <main>.
+                10px arredonda o canto superior esquerdo e o inferior direito. 
+                0px deixa o canto superior direito e o inferior esquerdo sem arredondamento. 
+                isso acontece porque eles continuam seguindo a regra pré alocada o primeiro tera 10px de arredondamento
+                o segundo 0px ent logo o terceiro tera 10px e o quarto 0px*/
+            border-radius: 10px 0px;
+            /* Essa propriedade cria uma sombra ao redor do elemento
+            4px 4px: Define o deslocamento horizontal e vertical da sombra (a sombra é deslocada 4px à direita e 4px para
+             baixo).
+            9px: Este valor é o desfoque da sombra, tornando-a mais suave.
+            0px: O valor de spread, que define o quanto a sombra se expande além dos seus limites.
+            rgba(0, 0, 0, 0.349): Define a cor da sombra em um tom de cinza com transparência de 34,9%.*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.349);
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(153, 153, 153);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+   <header>
+    <h1>
+        Meu site
+    </h1>
+        <nav>
+            <a href="#">
+                Link
+            </a>
+            <a href="#">
+                Link
+            </a>
+            <a href="#">
+                Link
+            </a>
+            <a href="#">
+                Link
+            </a>
+            <a href="#">
+                Link
+            </a>
+        </nav>
+   </header>
+   <main>
+        <section id="assuntos">
+            Novas Farms e Tudo Sobre a Mais Recente Atualização do Minecraft
+        </section>
+        <section id="noticias">
+                <article>
+                    <h2>
+                        Tudo o que Você Precisa Saber Sobre a Nova Atualização do Minecraft
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla 
+                        aspernatur quia corporis autem at dolore suscipit, iusto soluta 
+                        omnis tempore modi cum magnam saepe dolorum eius ea ab numquam 
+                        fugit.
+                    </p>
+                    <aside>
+                        <p>
+                            Artigo escrito por Vinnicin13 
+                        </p>
+                    </aside>
+                </article>
+                <article>
+
+                </article>
+        </section>
+   </main>
+   <footer>
+        <p>
+            Desenvolvido pela Gb
+        </p>
+   </footer>
+   <div id="bola">
+
+   </div>
+</body>
+</html>

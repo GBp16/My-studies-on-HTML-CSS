@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Modelo de caixas
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        
+        h1 { /*Box-Level*/
+            background-color: aquamarine;
+            height: 300px;                          
+            width: 300px;
+
+            /*The Border property will add a 10px, solid, gray border*/
+            border: 10px solid grey;
+
+            /*Padding property adds 10px inner padding*/
+            padding: 10px;
+
+            /*The margin property will add the following stylizations: a margin in the
+             top with a thickness of 20px, and one at the bottom with a thickness of 40px. 
+             Now right and left auto(automatic), means that they will be calculated based on 
+             in the size of the page, thus dividing the space equally between the two and centralizing 
+             horizontally the container/box*/
+            margin: 20px auto 40px auto;
+
+            /*The Outline property will add dashed lines around the h1, the lines
+             will have a thickness of 5px, and will have a chocolate color*/
+            outline: 5px dashed chocolate;
+
+        }
+
+
+                /*Inline-Level*/
+            /*Here we have an example of what using the border property would look like without a shorthand. 
+             This example also works for other properties such as padding, margin, outline, etc.
+             The thickness will be 2px, the border style will be dotted, and the color will be gray*/
+        a {
+            border-width: 2px;
+            border-style: dotted;
+            border-color: gray;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>
+        Exemplo de caixa box-level
+    </h1>
+    <p>
+        Parágrafos também são exemplos de box-level, mas os 
+        <a href="#">
+            Links são exemplos de caixas inline-level
+        </a>
+        vamos ver como tudo isso funciona
+    </p>
+</body>
+</html>

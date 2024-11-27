@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Links
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        /*  CUSTOM SELECTORS
+            # = ID
+            . = Class
+            : = Pseudo-Class
+            :: = Pseudo-Element
+            > = Children
+
+        */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        /* Pseudo-Classes*/
+
+        /*If the link is visited or has been accessed before, its color will be displayed in purple.*/
+        a:visited {
+            color: purple;
+        }
+
+        /*When the mouse hovers over the link, it will be underlined and its color will change to black.*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /*The Pseudo-Class defines what will be done with the chosen element when it is activated. In this case, it is the link. When the link is clicked (activated), it will turn yellow.*/
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgba(255, 127, 197, 0.466);
+        }
+
+        /*pseudo-Elemento*/
+        /*The pseudo-element, unlike pseudo-classes, is identified by a sequence of two dots (::) instead of just one (:).*/
+
+        /*After each element that contains the special class, the symbol "⬅" will be automatically displayed, the added symbol will not have any decoration, the font weight will be normal, and the symbol color will be darkgray*/
+        .especial::after {
+            content: '⬅';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial::before {
+            content: '⮕';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>
+        Personalizando Links
+    </h1>
+    <ul>
+        <li>
+            <!-- target="_blank" will cause the linked site to open in another tab-->
+            <a href="https://github.com/GBp16?tab=repositories" target="_blank"
+            class="especial">
+                Repositorios GitHub
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/@pelocano_1471" target="_blank">
+                Canal do Youtube
+            </a>
+        </li>
+        <li>
+            <a href="https://www.cursoemvideo.com/" 
+            target="_blank">
+                Site do Curso em video 
+            </a>
+        </li>
+    </ul>
+</body>
+</html>

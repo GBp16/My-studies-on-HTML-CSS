@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Pseudo-Classes
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        div {
+            /*Leave everything aligned horizontally*/
+            display: inline-block;
+
+            background-color: cadetblue;
+            text-align: center;
+
+            /*It will add a 1px solid border to the divs, with the color purple*/
+            border: 1px solid rgb(98, 0, 128);
+
+            /*Height = height*/
+            height: 200px;
+            /*Width = width*/
+            width: 200px;
+        }
+
+
+        /*Hover = when I hover over the desired property, it will execute the specifications that are
+        inside the curly brackets {}.
+
+            When I hover the mouse over the divs they will have a yellow background */
+        div:hover {
+            background-color: yellow;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div id="d1">
+        01
+    </div>
+
+    <div id="d2">
+        02
+    </div>
+
+    <div id="d3">
+        03
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Hover example
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--local style-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            color: brown;
+        }
+
+        /*It will only change the paragraph that is inside a div*/
+        div > p {
+            display: none;
+        }
+
+        /*When I hover the mouse over the div, the paragraph inside
+         it will appear, the text will be white and the background 
+         will be red.*/
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        Hover example
+    </h1>
+    <p>
+        mouse over the text below
+    </p>
+    <div>
+        Mouse over here 
+            <p>
+                HIDDEN TEXT...
+            </p>
+            <p>
+                End of example
+            </p>
+    </div>
+</body>
+</html>
